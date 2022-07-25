@@ -11,6 +11,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: white;
+    font-weight: 700;
 }
 
 .nav-links{
@@ -61,6 +62,12 @@ nav{
 
 }
 
+@media  screen and (min-width: 769px){
+    .prev .next{
+        display: none;
+    }
+}
+
 @media  screen and (max-width: 768px){
     body{
         overflow-x: hidden;
@@ -90,10 +97,45 @@ nav{
     .m-s{
         display: none;
     }
+    .mySlides {
+        width: 100%;
+    }
+    .gallery-img{
+        border-radius: none;
+    }
+    /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: -50px;
+    margin-left: 5%;
+    margin-right: 7%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px 40px 40px 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: white;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 25px 25px 25px 25px;
+  }
+  .demo{
+    display: none;
+  }
+  .sneak-img-gal{
+    padding-top: none;
+    padding-left: none;
+    padding-right: none;
 }
-
-@media screen and (min-width:768px) {
-    
 }
 
 .nav-active{
@@ -123,14 +165,87 @@ nav{
 
 .sneak-img-gal{
     background-color:white;
+    padding-top: 5%;
     padding-left: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .sneak-descrip{
-    padding-left: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
     padding-right: 10%;
     background-color:white;
+}
+
+p{
+    font-size: 16px;
+}
+
+.product-brand{
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-weight:700;
+    
+}
+.product-name{
+    color:hsl(0, 0%, 0%);
+    text-transform:capitalize;
+    font-weight:700;
+}
+.product-descrip{
+    color:hsl(219, 9%, 45%);
+    font-weight:400;
+}
+
+.sneak-img-gal .sneak-descrip{
+    padding: 20%;
+}
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position:relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.gallery-img{
+    border-radius: 20px 20px 20px 20px;
 }
 
 
