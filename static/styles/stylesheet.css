@@ -63,6 +63,8 @@ nav{
 }
 
 @media  screen and (min-width: 769px){
+
+    /* PROBLEM */
     .prev .next{
         display: none;
     }
@@ -103,26 +105,26 @@ nav{
     .gallery-img{
         border-radius: none;
     }
-    /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    padding: 10px;
-    padding-left: 20px;
-    margin-top: -50px;
-    margin-left: 5%;
-    margin-right: 7%;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 40px 40px 40px 40px;
-    user-select: none;
-    -webkit-user-select: none;
-    background-color: white;
-  }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        padding: 10px;
+        padding-left: 20px;
+        margin-top: -30px;
+        margin-left: 5%;
+        margin-right: 7%;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 40px 40px 40px 40px;
+        user-select: none;
+        -webkit-user-select: none;
+        background-color: white;
+    }
   
   .next {
     right: 0;
@@ -131,6 +133,8 @@ nav{
   .demo{
     display: none;
   }
+
+  /* PROBLEM */
   .sneak-img-gal{
     padding-top: none;
     padding-left: none;
@@ -180,18 +184,20 @@ nav{
 p{
     font-size: 16px;
 }
-
+/* PROBLEM */
 .product-brand{
     color: hsl(26, 100%, 55%);
     text-transform: uppercase;
     font-weight:700;
     
 }
+/* PROBLEM */
 .product-name{
     color:hsl(0, 0%, 0%);
     text-transform:capitalize;
     font-weight:700;
 }
+/* PROBLEM */
 .product-descrip{
     color:hsl(219, 9%, 45%);
     font-weight:400;
@@ -204,7 +210,6 @@ p{
 
 
 
-/* Position the image container (needed to position the left and right arrows) */
 .container {
     position:relative;
   }
@@ -247,6 +252,8 @@ p{
 .gallery-img{
     border-radius: 20px 20px 20px 20px;
 }
+
+
 
 
 
