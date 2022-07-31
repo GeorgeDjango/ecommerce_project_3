@@ -100,6 +100,16 @@ nav{
     background-color:white;
 }
 
+.price-elements{
+    
+    height: 50px;
+    background-color:white;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
 p{
     font-size: 16px;
 }
@@ -108,24 +118,70 @@ p{
     color: hsl(26, 100%, 55%);
     text-transform: uppercase;
     font-weight:700;
+    letter-spacing: 2px;
     
 }
+
+
 /* PROBLEM */
-.product-name{
+.product-name, .current-price{
     color:hsl(0, 0%, 0%);
     text-transform:capitalize;
     font-weight:700;
+    font-size: 25px;
 }
+.current-price{
+    float: left;
+}
+
+
 /* PROBLEM */
 .product-descrip{
     color:hsl(219, 9%, 45%);
     font-weight:400;
+    line-height: 28px;
+}
+
+.discount{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    width: 50px;
+    height: 25px;
+    font-weight:700;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.price{
+    height: 25px;
+    font-weight:700;
+    color:hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    float: right;
+    margin-top: 5px;
 }
 
 .sneak-img-gal .sneak-descrip{
     padding: 20%;
 }
 
+.add-cart{
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    background-color:hsl(26, 100%, 55%);
+    color: hsl(25, 100%, 94%);
+    font-weight:700;
+    border: 0px;
+    border-radius: 7px;
+}
+
+.cart-button{
+    color: hsl(25, 100%, 94%);
+}
 
 
 
@@ -168,7 +224,7 @@ p{
     opacity: 1;
   }
 
-.gallery-img{
+.galleryImg{
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -190,8 +246,7 @@ p{
     .nav-links{
         width: 60%;
     }
-
-}
+    }
 
 @media  screen and (min-width: 769px){
 
@@ -199,6 +254,9 @@ p{
     .prev, .next{
         display: none;
     }
+    .add-cart{
+        width: 100%;
+}
 }
 
 @media  screen and (max-width: 768px){
@@ -234,7 +292,7 @@ p{
     .mySlides {
         width: 100%;
     }
-    .gallery-img{
+    .galleryImg{
         border-radius: 0;
     }
     
@@ -266,10 +324,55 @@ p{
     display: none;
   }
 
-  /* PROBLEM */
+
   .sneak-img-gal{
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
 }
 }
+
+
+
+
+
+
+
+/*MODAL ATTEMPT*/
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
