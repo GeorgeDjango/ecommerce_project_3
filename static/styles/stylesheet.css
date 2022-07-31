@@ -87,11 +87,14 @@ nav{
 }
 
 .sneak-img-gal{
+    height: 80%;
     background-color:white;
     padding-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
 }
+
+
 
 .sneak-descrip{
     padding-top: 5%;
@@ -226,10 +229,43 @@ p{
 
 .galleryImg{
     border-radius: 20px 20px 20px 20px;
+    margin-top: 25px;
 }
 
-
-
+.decrease-value{
+    border: 0;
+    width: 15%;
+    background-color: hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 40;
+    padding: 10px;
+    height: 60px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.value{
+    border: 0;
+    background-color: hsl(223, 64%, 98%);
+    width: 70%;
+    font-weight: 700;
+    font-size: 40;
+    padding: 10px;
+    height: 60px;
+    
+}
+.increase-value{
+    border: 0;
+    background-color: hsl(223, 64%, 98%);
+    width: 15%;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 40;
+    padding: 10px;
+    height: 60px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
 
 
 
