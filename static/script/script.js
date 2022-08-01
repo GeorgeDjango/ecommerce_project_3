@@ -140,6 +140,7 @@ for (btn of btns) {
 
 
 
+
  // increase/decrease function
  function increase() {
   document.getElementById('quantInput').stepUp();
