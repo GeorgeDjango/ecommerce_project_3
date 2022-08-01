@@ -18,6 +18,17 @@
         <link rel="stylesheet" href="./static/styles/stylesheet.css">
     </head>
     <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <button class="close">x</button>
+                <div class="mySlidesModal">   
+                    <img class="main-img cursor" src="./static/images/image-product-1.jpg" style="width:100%">
+                </div>
+                <!-- Next and previous buttons modal -->
+                <a class="prev-modal" onclick="plusSlidesModal(-1)">&#10094;</a>
+                <a class="next-modal" onclick="plusSlidesModal(1)">&#10095;</a>
+            </div>
+        </div>
         <nav>
             <div class="burger">
                 <div class="line1"></div>
@@ -52,7 +63,10 @@
                 <img class="avatar" src="./static/images/image-avatar.png">
             </div>
         </nav>
-        <hr class="m-s"/>
+        <!--hr class="m-s"/-->
+
+        
+
         
         <div class="row">
             <div class="col-md-6 sneak-img-gal">
@@ -61,19 +75,19 @@
 
                     <!-- Full-width images -->
                     <div class="mySlides">   
-                        <img class="main-img" src="./static/images/image-product-1.jpg" style="width:100%">
+                        <img class="main-img cursor" src="./static/images/image-product-1.jpg" style="width:100%">
                     </div>
                 
                     <div class="mySlides">
-                        <img class="main-img" src="./static/images/image-product-2.jpg" style="width:100%">
+                        <img class="main-img cursor" src="./static/images/image-product-2.jpg" style="width:100%">
                     </div>
                 
                     <div class="mySlides">
-                        <img class="main-img" src="./static/images/image-product-3.jpg" style="width:100%">
+                        <img class="main-img cursor" src="./static/images/image-product-3.jpg" style="width:100%">
                     </div>
                 
                     <div class="mySlides">
-                        <img class="main-img" src="./static/images/image-product-4.jpg" style="width:100%">
+                        <img class="main-img cursor" src="./static/images/image-product-4.jpg" style="width:100%">
                     </div>
                 
                     <!-- Next and previous buttons -->
@@ -113,14 +127,21 @@
                     </p>
                 </div>
                 <div class="input-group mb-3">
-                    <button class="decrease-value">-</button>
-                    <button class="value">0</button>
-                    <button class="increase-value">+</button>
+                    <button class="decrease-value" onclick="decrease()">-</button>
+                    <input id="quantInput" type="number" value="0" min="0" max="20"></input>
+                    <button class="increase-value" onclick="increase()">+</button>
                 </div>
                 <div>
                     <button class="add-cart">
                         <img class="cart-button" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
+                </div>
+                <div class="cart-modal">
+                    <p class="cart">
+                        Cart
+                    </p>
+                    <hr class="m-s"/>
+
                 </div>
             </div>
         </div>

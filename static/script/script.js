@@ -36,10 +36,12 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 
 function showSlides(n) {
   let i;
@@ -55,15 +57,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  //captionText.innerHTML = dots[slideIndex-1].alt;
 } 
-
-
-
-
-
-
-
 
 
 
@@ -71,26 +66,86 @@ function showSlides(n) {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementByClassName("main-img");
-console.log(btn);
+var btns = document.getElementsByClassName("main-img");
+for (btn of btns) {
+ btn.onclick = function () {
+ modal.style.display = "block";
+ }
+}
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+ var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  console.log("clicked")
-  modal.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+ span.onclick = function() {
+   modal.style.display = "none";
+ }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
+ window.onclick = function(event) {
+   if (event.target == modal) {
+     modal.style.display = "none";
+     }
+ } 
+
+
+
+
+
+
+// let slideIndexModal = 1;
+// showSlidesModal(slideIndexModal);
+
+// // Next/previous controls modal
+// function plusSlidesModal(n) {
+//   showSlidesModal(slideModalIndex += n);
+// }
+
+// // Thumbnail image controls modal
+// //function currentSlideModal(n) {
+//   //showSlidesModal(slideIndex = n);
+// //}
+
+// function showSlidesModal(n) {
+//   let i;
+//   let slidesModal = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("demo");
+//   if (n > slidesModal.length) {slideIndexModal = 1}
+//   if (n < 1) {slideIndexModal = slidesModal.length}
+//   for (i = 0; i < slidesModal.length; i++) {
+//     slidesModal[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slidesModal[slideIndexModal-1].style.display = "block";
+//   dots[slideIndexModal-1].className += " active";
+//   //captionText.innerHTML = dots[slideIndex-1].alt;
+// } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // increase/decrease function
+ function increase() {
+  document.getElementById('quantInput').stepUp();
+}
+function decrease() {
+  document.getElementById('quantInput').stepDown();
+}
+
+
