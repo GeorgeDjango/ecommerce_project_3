@@ -4,7 +4,6 @@ var quantity = 0;
 function addBasketTotal() {
     return productPrice * quantity;
 }
-console.log(addBasketTotal());
 
 
 function updateBasket() {
