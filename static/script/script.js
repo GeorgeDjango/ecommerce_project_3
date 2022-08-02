@@ -95,7 +95,8 @@ for (btn of btns) {
 
 
 // let slideIndexModal = 1;
-// showSlidesModal(slideIndexModal);
+  showSlides(slideIndex);
+  console.log();
 
 // // Next/previous controls modal
 // function plusSlidesModal(n) {
@@ -138,15 +139,5 @@ for (btn of btns) {
 
 
 
-
-
-
- // increase/decrease function
- function increase() {
-  document.getElementById('quantInput').stepUp();
-}
-function decrease() {
-  document.getElementById('quantInput').stepDown();
-}
 
 

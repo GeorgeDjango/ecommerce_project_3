@@ -128,11 +128,11 @@
                 </div>
                 <div class="input-group mb-3">
                     <button class="decrease-value" onclick="decrease()">-</button>
-                    <input id="quantInput" type="number" value="0" min="0" max="20"></input>
+                    <input id="quantityInput" type="number" value="0" min="0" max="20"></input>
                     <button class="increase-value" onclick="increase()">+</button>
                 </div>
                 <div>
-                    <button class="add-cart">
+                    <button class="add-cart" id="addToCart">
                         <img class="cart-button" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
                 </div>
@@ -150,7 +150,7 @@
                             <p class="basket-price">price</p>
                             <p class="basket-multiplier">x</p>
                             <p class="basket-quantity">quantity</p>
-                            <p class="basket-total">total</p>
+                            <p class="basket-total" id="basketTotal">0</p>
                         </div>
                         <div>
                             <img src="./static/images/icon-delete.svg" class="basket-dlt" alt="">
@@ -160,5 +160,6 @@
             </div>
         </div>
     <script src="./static/script/script.js"></script>
+    <script src="./static/script/basket.js"></script>
     </body>
 </html>
