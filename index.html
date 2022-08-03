@@ -57,7 +57,7 @@
             </ul>
             
             <div>
-                <img class="basket" src="./static/images/icon-cart.svg">
+                <img class="basket" id="showCurrentBasket" src="./static/images/icon-cart.svg">
             </div>
             <div>
                 <img class="avatar" src="./static/images/image-avatar.png">
@@ -113,10 +113,10 @@
             </div>       
             <div class="col-md-6 sneak-descrip">
                 <p class="product-brand">sneaker company</p>
-                <p class="product-name"  id="productName">fall limited edition sneakers</p>
+                <p class="product-name"  id="productName">Fall Limited Edition Sneakers</p>
                 <p class="product-descrip">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
                 <div>
-                    <p class="current-price">
+                    <p class="current-price" id="itemPrice">
                         $125.00
                     </p>
                     <p class="discount">
@@ -136,26 +136,31 @@
                         <img class="cart-button" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
                 </div>
-                <div id="cartModal">
-                    <div class="basket-contents">
+                <div id="myCartModal">
+                    <div class="basket-title">
                         <p class="cart">
                             Cart
                         </p>
-                        <hr class="m-s"/>
+                    </div>
+                    <!--hr class="m-s"/-->
+                    <div class="basket-contents">
                         <div>
                             <img class="basket-thumbnail" src="./static/images/image-product-1-thumbnail.jpg" alt="">
-                            <p class="basket-product" id="productName">product</p>
-                        </div>
-                        <div>
-                            <p class="basket-price">price</p>
-                            <p class="basket-multiplier">x</p>
+                            <p class="basket-product" id="basketName"></p>
+                            <p class="basket-price" id="basketPrice"></p>
+                            <p class="basket-multiplier" id="basketMultiplier">x</p>
                             <p class="basket-quantity">quantity</p>
-                            <p class="basket-total" id="basketTotal">0</p>
+                            <p class="basket-total" id="basketTotal"></p>
                         </div>
                         <div>
                             <img src="./static/images/icon-delete.svg" class="basket-dlt" alt="">
                         </div>
+                        <div>
+                            <button class="checkout-modal" id="checkoutModal">Checkout</button>
+                        </div>
                     </div>
+                        
+                    
                 </div>
             </div>
         </div>
