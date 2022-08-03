@@ -45,10 +45,19 @@ addToCartBtn.addEventListener('click',updateBasket);
 
 
 // Get the basket modal
-var cartModal = document.getElementById("myCartModal");
+var cartModal = document.getElementById("myCartModalBackground");
 
-// Get the button that opens the modal
+// Get the button that opens the basket modal
 var btn = document.getElementById("showCurrentBasket");
 btn.onclick = function () {
-myCartModal.style.display = "block";
+myCartModalBackground.style.display = "block";
 }
+
+
+
+// When the user clicks anywhere outside of the basket modal, close it
+window.onclick = function(event) {
+    if (event.target == myCartModalBackground) {
+      myCartModalBackground.style.display = "none";
+      }
+  } 
