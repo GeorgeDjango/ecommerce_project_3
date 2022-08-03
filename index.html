@@ -128,7 +128,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <button class="decrease-value" onclick="decrease()">-</button>
-                    <input id="quantityInput" type="number" value="0" min="0" max="20"></input>
+                    <input id="quantityInput" type="number" value="1" min="1" max="20"></input>
                     <button class="increase-value" onclick="increase()">+</button>
                 </div>
                 <div>
@@ -145,19 +145,20 @@
                         </div>
                         <!--hr class="m-s"/-->
                         <div class="basket-contents">
-                            <!--div id="emptyBasket">
-                                <p>Hmmmm, there's nothing in your basket</p>
-                            </div-->
+                            <div id="emptyBasket">
+                                <p>Hmmmm, there's nothing in your basket.</p>
+                                <p>You better treat yourself to something nice!</p>
+                            </div>
                             <div>
-                                <img class="basket-thumbnail" src="./static/images/image-product-1-thumbnail.jpg" alt="">
+                                <img class="basket-thumbnail" id="basketThumbnail" src="./static/images/image-product-1-thumbnail.jpg" alt="">
                                 <p class="basket-product" id="basketName"></p>
                                 <p class="basket-price" id="basketPrice"></p>
-                                <p class="basket-multiplier" id="basketMultiplier">x</p>
-                                <p class="basket-quantity">quantity</p>
+                                <p class="basket-multiplier" id="basketMultiplier"></p>
+                                <p class="basket-quantity" id="basketQuantity"></p>
                                 <p class="basket-total" id="basketTotal"></p>
                             </div>
                             <div>
-                                <img src="./static/images/icon-delete.svg" class="basket-dlt" alt="">
+                                <img src="./static/images/icon-delete.svg" class="basket-delete" id="basketDelete" alt="">
                             </div>
                             <div>
                                 <button class="checkout-modal" id="checkoutModal">Checkout</button>

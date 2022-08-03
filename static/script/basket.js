@@ -15,6 +15,12 @@ function updateBasket() {
     basketTotal.innerHTML = addBasketTotal();
     basketName.innerHTML = productName;
     basketPrice.innerHTML = itemPrice;
+    document.getElementById("basketMultiplier").innerHTML = "X";
+    document.getElementById("basketThumbnail").style.display = "block";
+    document.getElementById("basketQuantity").innerHTML = quantityInput.value;
+    document.getElementById("basketDelete").style.display = "block";
+    document.getElementById("checkoutModal").style.display = "block";
+    document.getElementById("emptyBasket").style.display = "none";
 }
 var addToCartBtn = document.getElementById('addToCart');
 
