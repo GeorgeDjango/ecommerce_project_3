@@ -2,7 +2,8 @@ var productPrice = 125;
 var quantity = 0;
 
 function addBasketTotal() {
-    return productPrice * quantity;
+    var total = productPrice * quantity;
+    return `$${total}.00`;
 }
 
 
@@ -15,12 +16,20 @@ function updateBasket() {
     basketTotal.innerHTML = addBasketTotal();
     basketName.innerHTML = productName;
     basketPrice.innerHTML = itemPrice;
-    document.getElementById("basketMultiplier").innerHTML = "X";
-    document.getElementById("basketThumbnail").style.display = "block";
-    document.getElementById("basketQuantity").innerHTML = quantityInput.value;
-    document.getElementById("basketDelete").style.display = "block";
-    document.getElementById("checkoutModal").style.display = "block";
-    document.getElementById("emptyBasket").style.display = "none";
+    document.getElementById('basketQuantity').innerHTML = quantity;
+    document.getElementById('basketMultiplier').innerHTML = 'X';
+    document.getElementById('emptyBasket').style.display = 'none';
+    document.getElementById('basketThumbnail').style.display = 'block';
+    document.getElementById('basketDelete').style.display = 'block';
+    document.getElementById('checkoutModal').style.display = 'block';
+    document.getElementById('basketMultiplier').style.display = 'block';
+    document.getElementById('basketQuantity').style.display = 'block';
+    document.getElementById('basketName').style.display = 'block';
+    document.getElementById('basketPrice').style.display = 'block';
+    document.getElementById('basketTotal').style.display = 'block';
+    var basketNotification = document.getElementById('basketNotification');
+    basketNotification.innerHTML = quantity;
+    basketNotification.classList.remove('hidden');
 }
 var addToCartBtn = document.getElementById('addToCart');
 
@@ -28,13 +37,22 @@ addToCartBtn.addEventListener('click',updateBasket);
 
 
 
-//const price = 1470000.15;
+ function basketDelete() {
+     quantity = 0;
+     basketNotification.classList.add('hidden');
+     document.getElementById('basketMultiplier').style.display = 'none';
+     document.getElementById('basketThumbnail').style.display = 'none';
+     document.getElementById('basketQuantity').style.display = 'none';
+     document.getElementById('basketDelete').style.display = 'none';
+     document.getElementById('checkoutModal').style.display = 'none';
+     document.getElementById('emptyBasket').style.display = 'block';
+     document.getElementById('basketName').style.display = 'none';
+     document.getElementById('basketPrice').style.display = 'none';
+     document.getElementById('basketTotal').style.display = 'none';
+ }
+ var basketDeleteBtn = document.getElementById('basketDelete');
 
-//let dollarUS = Intl.NumberFormat("en-US", {
-    //style: "currency",
-    //currency: "USD",
-//});
-//console.log("Dollars: " + dollarUS.format(price));
+ basketDeleteBtn.addEventListener('click',basketDelete);
 
 
 
@@ -51,12 +69,12 @@ addToCartBtn.addEventListener('click',updateBasket);
 
 
 // Get the basket modal
-var cartModal = document.getElementById("myCartModalBackground");
+var cartModal = document.getElementById('myCartModalBackground');
 
 // Get the button that opens the basket modal
-var btn = document.getElementById("showCurrentBasket");
+var btn = document.getElementById('showCurrentBasket');
 btn.onclick = function () {
-myCartModalBackground.style.display = "block";
+myCartModalBackground.style.display = 'block';
 }
 
 
@@ -64,6 +82,6 @@ myCartModalBackground.style.display = "block";
 // When the user clicks anywhere outside of the basket modal, close it
 window.onclick = function(event) {
     if (event.target == myCartModalBackground) {
-      myCartModalBackground.style.display = "none";
+      myCartModalBackground.style.display = 'none';
       }
   } 

@@ -56,8 +56,9 @@
                 </li>
             </ul>
             
-            <div>
+            <div class="basket-wrapper">
                 <img class="basket" id="showCurrentBasket" src="./static/images/icon-cart.svg">
+                <div class="basket-notification hidden" id="basketNotification"></div>
             </div>
             <div>
                 <img class="avatar" src="./static/images/image-avatar.png">
@@ -133,7 +134,7 @@
                 </div>
                 <div>
                     <button class="add-cart" id="addToCart">
-                        <img class="cart-button" src="./static/images/icon-cart.svg"> Add to cart
+                        <img class="cart-button filter" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
                 </div>
                 <div id="myCartModalBackground">
@@ -149,7 +150,7 @@
                                 <p>Hmmmm, there's nothing in your basket.</p>
                                 <p>You better treat yourself to something nice!</p>
                             </div>
-                            <div>
+                            <div >
                                 <img class="basket-thumbnail" id="basketThumbnail" src="./static/images/image-product-1-thumbnail.jpg" alt="">
                                 <p class="basket-product" id="basketName"></p>
                                 <p class="basket-price" id="basketPrice"></p>
