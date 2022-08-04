@@ -17,8 +17,8 @@ function updateBasket() {
     basketName.innerHTML = productName;
     basketPrice.innerHTML = itemPrice;
     document.getElementById('basketQuantity').innerHTML = quantity;
-    document.getElementById('basketMultiplier').innerHTML = 'X';
     document.getElementById('emptyBasket').style.display = 'none';
+    document.getElementById('basketMultiplier').innerHTML = 'X';
     document.getElementById('basketThumbnail').style.display = 'block';
     document.getElementById('basketDelete').style.display = 'block';
     document.getElementById('checkoutModal').style.display = 'block';

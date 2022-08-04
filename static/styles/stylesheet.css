@@ -445,9 +445,10 @@ input[type=number]  {
 }
 
 #emptyBasket {
+    color: hsl(219, 9%, 45%);
     display: block;
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -574,6 +575,7 @@ input[type=number]  {
         overflow-x: hidden;
 
     }
+
     /* PROBLEM */
     .nav {
         border-bottom:0 0;
