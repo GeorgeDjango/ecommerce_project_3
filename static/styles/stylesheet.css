@@ -9,6 +9,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Nav */
 nav {
     display: flex;
     margin-left: 10%;
@@ -41,19 +42,25 @@ nav {
     color: hsl(219, 9%, 45%);
     font-weight: 400;
 }
+
 .nav-links a:hover {
-    border-bottom:solid 2px var(--theme-colour);
+    border-bottom: solid 2px var(--theme-colour);
 }
 
+/* Basket in Nav */
 .basket {
     cursor: pointer;
 }
+
 .basket-wrapper {
     position: relative;
 }
+
+/* Hidden as standard */
 .hidden{
     display: none;
 }
+
 .basket-notification {
     position: absolute;
     top: -10px;
@@ -71,6 +78,7 @@ nav {
     cursor: pointer;
     float: right;
 }
+
 .avatar:hover {
     height: 37px;
     width: 37px;
@@ -79,6 +87,7 @@ nav {
     border-radius: 20px;
 }
 
+/* Burger menu */
 .burger  {
     display: none;
 }
@@ -91,17 +100,17 @@ nav {
     transition: all 0.3s ease;
 }
 
+
 .m-s  {
     color: lightgrey;
 }
-
-
 
 .nav-active {
     transform: translateX(0%) !important;
 
 }
 
+/* Animation on mobile layout nav menu */
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -123,6 +132,9 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+
+/* Image gallery */
+
 .sneak-img-gal {
     height: 80%;
     background-color:white;
@@ -133,6 +145,7 @@ nav {
 }
 
 
+/* Text */
 
 .sneak-descrip {
     padding-top: 5%;
@@ -230,14 +243,6 @@ p {
     filter: brightness(0) saturate(100%) invert(87%) sepia(20%) saturate(413%) hue-rotate(320deg) brightness(107%) contrast(103%);
 }
 
-
-
-/*.cart-button {
-    color: hsl(25, 100%, 94%);
-}*/
-
-
-
 .main-img,.main-image-modal {
     border-radius: 25px;
 }
@@ -246,61 +251,59 @@ p {
 
 .container  {
     position:relative;
-  }
+}
   
-  /* Hide the images by default */
-  .mySlides  {
+.mySlides  {
     display: none;
-  }
-  .mySlidesModal  {
+}
+.mySlidesModal  {
     display: none;
-  }
+}
   
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor  {
+ 
+.cursor  {
     cursor: pointer;
-  }
+}
   
   
-  
-  
-  .row:after, .rowModal:after  {
+.row:after, .rowModal:after  {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Four columns side by side */
-  .column {
+.column {
     float: left;
     width: 25%;
-  }
-  .columnModal {
+}
+
+.columnModal {
     float: left;
     width: 25%;
     padding: 10px;
     padding-top: 0;
-  }
-  .rowModal{
+}
+  
+.rowModal{
     margin-left: 30%;
     margin-right: 30%;
-  }
+}
   
-  /* Add a transparency effect for thumnbail images */
-  .demo,.demoModal  {
+.demo,.demoModal  {
     opacity: 0.6;
-  }
+}
   
   
-  .active,
-  .demo:hover,.demoModal:hover  {
+.active,
+.demo:hover,.demoModal:hover  {
     opacity: 1;
-  }
+}
 
 .galleryImg,.galleryImgModal {
     border-radius: 20px 20px 20px 20px;
     margin-top: 25px;
 }
+
 .galleryImgModal{
     float: left;
     margin-top: 10px;
@@ -354,27 +357,8 @@ input[type=number]  {
 
 
 
-.attribution  { font-size: 11px; text-align: center; }
-.attribution a  { color: hsl(228, 45%, 44%); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MODAL ATTEMPT*/
- /* The Modal (background) */
- .modal  {
+/* The Modal (background) */
+.modal  {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -385,10 +369,10 @@ input[type=number]  {
     /* overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-  }
+}
   
-  /* Modal Content/Box */
-  .modal-content  {
+/* Modal Content/Box */
+.modal-content  {
     background-color: rgba(0,0,0,0);
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -396,48 +380,48 @@ input[type=number]  {
     padding-bottom: 0px;
     border: 0px;
     width: 40%; /* Could be more or less, depending on screen size */
-  }
+}
   
-  /* The Close Button */
-  .close  {
+/* The Close Button */
+.close  {
     color: white;
     margin-left: 97%;
     margin-bottom: 10px;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus  {
+.close:hover,
+.close:focus  {
     color: var(--theme-colour);
     text-decoration: none;
     cursor: pointer;
-  } 
-    .prev-modal,
-    .next-modal  {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: 50px;
-        padding: 10px;
-        padding-left: 20px;
-        margin-top: -30px;
-        margin-left: -4%;
-        margin-right: 0%;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 40px 40px 40px 40px;
-        user-select: none;
-        -webkit-user-select: none;
-        background-color: white;
-    }
+} 
+.prev-modal,
+.next-modal  {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -4%;
+    margin-right: 0%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px 40px 40px 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: white;
+}
   
-  .next-modal  {
+.next-modal  {
     right: 0;
     border-radius: 25px 25px 25px 25px;
-  }
+}
 
 /* The Modal (background) */
 #myCartModalBackground  {
@@ -505,15 +489,19 @@ input[type=number]  {
     color: hsl(219, 9%, 45%);
     font-weight: 400;
 }
+
 #basketName {
     display: block;
 }
+
 #basketPrice {
     display: block;
 }
+
 #basketQuantity {
     display: block;
 }
+
 #basketTotal {
     display: block;
 }
@@ -557,22 +545,6 @@ input[type=number]  {
 .checkout-modal:hover {
     opacity: 0.4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media  screen and (max-width: 1024px) {
@@ -644,8 +616,6 @@ input[type=number]  {
     .main-img {
         border-radius: 0;
     }
-    
-
     .prev,
     .next  {
         cursor: pointer;
@@ -673,28 +643,22 @@ input[type=number]  {
         float: right;
         margin-top: 5px;
     }
-
-    
-
-    
-  
-  .next  {
-    right: 0;
-    border-radius: 25px 25px 25px 25px;
-  }
-  .demo {
-    display: none;
-  }
-  .sneak-img-gal {
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    .next  {
+        right: 0;
+        border-radius: 25px 25px 25px 25px;}
+    .demo {
+        display: none;
+    }
+    .sneak-img-gal {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .sneak-descrip{
         padding-top: 5%;
         padding-left: 10%;
         padding-right: 10%;
-
+        padding-bottom: 10%;
     }
     #myCartModal {
         top: 8vh;

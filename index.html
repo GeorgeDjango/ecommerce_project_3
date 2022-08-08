@@ -14,12 +14,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-
         <link rel="stylesheet" href="./static/styles/stylesheet.css">
     </head>
     <body>
+        <!-- Modal Gallery -->
         <div id="myModal" class="modal">
-
             <div class="modal-content">
                 <button class="close">x</button>
                 <div class="mySlidesModal">   
@@ -34,12 +33,12 @@
                 <div class="mySlidesModal">   
                     <img class="main-img cursor" src="./static/images/image-product-4.jpg" style="width:100%">
                 </div>
-                <!-- Next and previous buttons modal -->
+                <!-- Previous and Next buttons on modal gallery -->
                 <a class="prev-modal" onclick="plusSlidesModal(-1)">&#10094;</a>
                 <a class="next-modal" onclick="plusSlidesModal(1)">&#10095;</a>
             </div>
 
-            <!-- Thumbnail images in modal -->
+            <!-- Modal Gallery thumbnails -->
             <div class="rowModal">
                 <div class="columnModal">
                     <img class="demoModal cursor galleryImgModal" src="./static/images/image-product-1-thumbnail.jpg" style="width: 100%;" onclick="currentSlideModal(1)">
@@ -55,7 +54,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Nav -->
         <nav>
+
+            <!-- Burger nav button -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -81,7 +84,8 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
-            
+
+            <!-- Basket in nav -->
             <div class="basket-wrapper">
                 <img class="basket" id="showCurrentBasket" src="./static/images/icon-cart.svg">
                 <div class="basket-notification hidden" id="basketNotification"></div>
@@ -90,29 +94,20 @@
                 <img class="avatar" src="./static/images/image-avatar.png">
             </div>
         </nav>
-        <!--hr class="m-s"/-->
-
         
-
-        
+        <!-- Images with slides -->
         <div class="row">
             <div class="col-md-6 sneak-img-gal">
-                 <!-- Container for the image gallery -->
                 <div class="container">
-
-                    <!-- Full-width images -->
                     <div class="mySlides">   
                         <img class="main-img cursor" src="./static/images/image-product-1.jpg" style="width:100%">
                     </div>
-                
                     <div class="mySlides">
                         <img class="main-img cursor" src="./static/images/image-product-2.jpg" style="width:100%">
-                    </div>
-                
+                    </div>            
                     <div class="mySlides">
                         <img class="main-img cursor" src="./static/images/image-product-3.jpg" style="width:100%">
                     </div>
-                
                     <div class="mySlides">
                         <img class="main-img cursor" src="./static/images/image-product-4.jpg" style="width:100%">
                     </div>
@@ -138,6 +133,8 @@
                     </div>
                 </div> 
             </div>       
+
+            <!-- Section for text and basket functions -->
             <div class="col-md-6 sneak-descrip">
                 <p class="product-brand">sneaker company</p>
                 <p class="product-name"  id="productName">Fall Limited Edition Sneakers</p>
@@ -163,7 +160,8 @@
                         <img class="cart-button filter" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
                 </div>
-                
+
+                <!-- Modal for shopping basket -->
                 <div id="myCartModalBackground">
                     <div id="myCartModal">
                         <div class="basket-title">
@@ -171,7 +169,6 @@
                                 Cart
                             </p>
                         </div>
-                        <!--hr class="m-s"/-->
                         <div class="basket-contents">
                             <div id="emptyBasket">
                                 <p>Your cart is empty.</p>
@@ -187,9 +184,7 @@
                                 <button class="checkout-modal" id="checkoutModal">Checkout</button>
                             </div>
                         </div>
-                    </div>
-                        
-                    
+                    </div>    
                 </div>
             </div>
         </div>

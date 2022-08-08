@@ -37,32 +37,31 @@ addToCartBtn.addEventListener('click',updateBasket);
 
 
 
- function basketDelete() {
-     quantity = 0;
-     basketNotification.classList.add('hidden');
-     document.getElementById('basketMultiplier').style.display = 'none';
-     document.getElementById('basketThumbnail').style.display = 'none';
-     document.getElementById('basketQuantity').style.display = 'none';
-     document.getElementById('basketDelete').style.display = 'none';
-     document.getElementById('checkoutModal').style.display = 'none';
-     document.getElementById('emptyBasket').style.display = 'block';
-     document.getElementById('basketName').style.display = 'none';
-     document.getElementById('basketPrice').style.display = 'none';
-     document.getElementById('basketTotal').style.display = 'none';
- }
- var basketDeleteBtn = document.getElementById('basketDelete');
-
- basketDeleteBtn.addEventListener('click',basketDelete);
-
+function basketDelete() {
+    quantity = 0;
+    basketNotification.classList.add('hidden');
+    document.getElementById('basketMultiplier').style.display = 'none';
+    document.getElementById('basketThumbnail').style.display = 'none';
+    document.getElementById('basketQuantity').style.display = 'none';
+    document.getElementById('basketDelete').style.display = 'none';
+    document.getElementById('checkoutModal').style.display = 'none';
+    document.getElementById('emptyBasket').style.display = 'block';
+    document.getElementById('basketName').style.display = 'none';
+    document.getElementById('basketPrice').style.display = 'none';
+    document.getElementById('basketTotal').style.display = 'none';
+}
+var basketDeleteBtn = document.getElementById('basketDelete');
+basketDeleteBtn.addEventListener('click',basketDelete);
 
 
- // increase/decrease function
- function increase() {
+
+// increase/decrease function
+function increase() {
     document.getElementById('quantityInput').stepUp();
-  }
-  function decrease() {
+}
+function decrease() {
     document.getElementById('quantityInput').stepDown();
-  }
+}
 
 
 
@@ -82,6 +81,6 @@ myCartModalBackground.style.display = 'block';
 // When the user clicks anywhere outside of the basket modal, close it
 window.onclick = function(event) {
     if (event.target == myCartModalBackground) {
-      myCartModalBackground.style.display = 'none';
-      }
-  } 
+        myCartModalBackground.style.display = 'none';
+    }
+} 
