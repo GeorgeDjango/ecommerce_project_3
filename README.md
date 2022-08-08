@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/GeorgeDjango/ecommerce_project_3
+- Live Site URL: https://georgedjango.github.io/ecommerce_project_3/
 
 ## My process
 
