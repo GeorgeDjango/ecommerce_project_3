@@ -24,10 +24,6 @@ burger.addEventListener('click',()=>{
 
 navSlide();
 
-
-
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,12 +32,10 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 
 function showSlides(n) {
   let i;
@@ -60,17 +54,11 @@ function showSlides(n) {
   //captionText.innerHTML = dots[slideIndex-1].alt;
 } 
 
-
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
-
-
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -84,11 +72,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
-
-
-
-
-
 
 let slideIndexModal = 1;
   showSlidesModal(slideIndexModal);
@@ -120,8 +103,6 @@ function showSlidesModal(n) {
   dots[slideIndexModal-1].className += " active";
 } 
 
-
-
 // remove event listener on mobile version
 function displayModal() {
   modal.style.display = "block";
@@ -147,4 +128,3 @@ function updateModalFunctionality(){
 }
 window.addEventListener("resize",updateModalFunctionality)
 updateModalFunctionality();
-

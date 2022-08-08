@@ -6,7 +6,6 @@ function addBasketTotal() {
     return `$${total}.00`;
 }
 
-
 function updateBasket() {
     var basketTotal = document.getElementById('basketTotal'); 
     var quantityInput = document.getElementById('quantityInput');
@@ -35,8 +34,6 @@ var addToCartBtn = document.getElementById('addToCart');
 
 addToCartBtn.addEventListener('click',updateBasket);
 
-
-
 function basketDelete() {
     quantity = 0;
     basketNotification.classList.add('hidden');
@@ -53,8 +50,6 @@ function basketDelete() {
 var basketDeleteBtn = document.getElementById('basketDelete');
 basketDeleteBtn.addEventListener('click',basketDelete);
 
-
-
 // increase/decrease function
 function increase() {
     document.getElementById('quantityInput').stepUp();
@@ -62,10 +57,6 @@ function increase() {
 function decrease() {
     document.getElementById('quantityInput').stepDown();
 }
-
-
-
-
 
 // Get the basket modal
 var cartModal = document.getElementById('myCartModalBackground');
@@ -75,8 +66,6 @@ var btn = document.getElementById('showCurrentBasket');
 btn.onclick = function () {
 myCartModalBackground.style.display = 'block';
 }
-
-
 
 // When the user clicks anywhere outside of the basket modal, close it
 window.onclick = function(event) {
