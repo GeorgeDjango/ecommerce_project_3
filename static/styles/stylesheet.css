@@ -127,8 +127,9 @@ nav {
     height: 80%;
     background-color:white;
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 2%;
+    padding-bottom: 5%;
 }
 
 
@@ -136,8 +137,9 @@ nav {
 .sneak-descrip {
     padding-top: 5%;
     padding-left: 2%;
-    padding-right: 10%;
+    padding-right: 15%;
     background-color:white;
+    padding-bottom: 5%;
 }
 
 .price-elements {
@@ -643,6 +645,7 @@ input[type=number]  {
         border-radius: 0;
     }
     
+
     .prev,
     .next  {
         cursor: pointer;
@@ -662,6 +665,18 @@ input[type=number]  {
         -webkit-user-select: none;
         background-color: white;
     }
+    .price {
+        height: 25px;
+        font-weight:700;
+        color:hsl(220, 14%, 75%);
+        text-decoration: line-through;
+        float: right;
+        margin-top: 5px;
+    }
+
+    
+
+    
   
   .next  {
     right: 0;
