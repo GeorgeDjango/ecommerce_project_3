@@ -19,14 +19,40 @@
     </head>
     <body>
         <div id="myModal" class="modal">
+
             <div class="modal-content">
                 <button class="close">x</button>
                 <div class="mySlidesModal">   
                     <img class="main-img cursor" src="./static/images/image-product-1.jpg" style="width:100%">
                 </div>
+                <div class="mySlidesModal">   
+                    <img class="main-img cursor" src="./static/images/image-product-2.jpg" style="width:100%">
+                </div>
+                <div class="mySlidesModal">   
+                    <img class="main-img cursor" src="./static/images/image-product-3.jpg" style="width:100%">
+                </div>
+                <div class="mySlidesModal">   
+                    <img class="main-img cursor" src="./static/images/image-product-4.jpg" style="width:100%">
+                </div>
                 <!-- Next and previous buttons modal -->
                 <a class="prev-modal" onclick="plusSlidesModal(-1)">&#10094;</a>
                 <a class="next-modal" onclick="plusSlidesModal(1)">&#10095;</a>
+            </div>
+
+            <!-- Thumbnail images in modal -->
+            <div class="rowModal">
+                <div class="columnModal">
+                    <img class="demoModal cursor galleryImgModal" src="./static/images/image-product-1-thumbnail.jpg" style="width: 100%;" onclick="currentSlideModal(1)">
+                </div>
+                <div class="columnModal">
+                    <img class="demoModal cursor galleryImgModal" src="./static/images/image-product-2-thumbnail.jpg" style="width: 100%;" onclick="currentSlideModal(2)">
+                </div>
+                <div class="columnModal">
+                    <img class="demoModal cursor galleryImgModal" src="./static/images/image-product-3-thumbnail.jpg" style="width: 100%;" onclick="currentSlideModal(3)">
+                </div>
+                <div class="columnModal">
+                    <img class="demoModal cursor galleryImgModal" src="./static/images/image-product-4-thumbnail.jpg" style="width: 100%;" onclick="currentSlideModal(4)">
+                </div>
             </div>
         </div>
         <nav>
@@ -137,6 +163,7 @@
                         <img class="cart-button filter" src="./static/images/icon-cart.svg"> Add to cart
                     </button>
                 </div>
+                
                 <div id="myCartModalBackground">
                     <div id="myCartModal">
                         <div class="basket-title">

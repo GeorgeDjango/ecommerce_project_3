@@ -68,10 +68,12 @@ var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btns = document.getElementsByClassName("main-img");
 for (btn of btns) {
- btn.onclick = function () {
- modal.style.display = "block";
- }
+  btn.onclick = function () {
+  modal.style.display = "block";
+  }
 }
+
+
 
 // Get the <span> element that closes the modal
  var span = document.getElementsByClassName("close")[0];
@@ -94,36 +96,35 @@ for (btn of btns) {
 
 
 
-// let slideIndexModal = 1;
-  showSlides(slideIndex);
+ let slideIndexModal = 1;
+  showSlidesModal(slideIndexModal);
   console.log();
 
-// // Next/previous controls modal
-// function plusSlidesModal(n) {
-//   showSlidesModal(slideModalIndex += n);
-// }
+// Next/previous controls modal
+function plusSlidesModal(n) {
+  showSlidesModal(slideIndexModal += n);
+}
 
-// // Thumbnail image controls modal
-// //function currentSlideModal(n) {
-//   //showSlidesModal(slideIndex = n);
-// //}
+// Thumbnail image controls modal
+function currentSlideModal(n) {
+  showSlidesModal(slideIndexModal = n);
+}
 
-// function showSlidesModal(n) {
-//   let i;
-//   let slidesModal = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("demo");
-//   if (n > slidesModal.length) {slideIndexModal = 1}
-//   if (n < 1) {slideIndexModal = slidesModal.length}
-//   for (i = 0; i < slidesModal.length; i++) {
-//     slidesModal[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slidesModal[slideIndexModal-1].style.display = "block";
-//   dots[slideIndexModal-1].className += " active";
-//   //captionText.innerHTML = dots[slideIndex-1].alt;
-// } 
+function showSlidesModal(n) {
+  let i;
+  let slidesModal = document.getElementsByClassName("mySlidesModal");
+  let dots = document.getElementsByClassName("demoModal");
+  if (n > slidesModal.length) {slideIndexModal = 1}
+  if (n < 1) {slideIndexModal = slidesModal.length}
+  for (i = 0; i < slidesModal.length; i++) {
+    slidesModal[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesModal[slideIndexModal-1].style.display = "block";
+  dots[slideIndexModal-1].className += " active";
+} 
 
 
 
