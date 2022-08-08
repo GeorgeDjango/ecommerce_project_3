@@ -65,13 +65,6 @@ function showSlides(n) {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btns = document.getElementsByClassName("main-img");
-for (btn of btns) {
-  btn.onclick = function () {
-  modal.style.display = "block";
-  }
-}
 
 
 
@@ -86,6 +79,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
+  console.log("click");
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -153,16 +147,4 @@ function updateModalFunctionality(){
 }
 window.addEventListener("resize",updateModalFunctionality)
 updateModalFunctionality();
-
-
-
-
-
-
-
-
-
-
-
-
 
