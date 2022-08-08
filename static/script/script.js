@@ -128,7 +128,31 @@ function showSlidesModal(n) {
 
 
 
+// remove event listener on mobile version
+function displayModal() {
+  modal.style.display = "block";
+}
 
+function updateModalFunctionality(){
+  // Get the button that opens the modal
+  var btns = document.getElementsByClassName("main-img");
+  var windowWidth = window.innerWidth;
+  console.log("function ran");
+  if (windowWidth > 768) {
+    console.log("window width is greater than 768")
+    for (btn of btns) {
+      btn.addEventListener("click",displayModal);
+    }
+  } else {
+    console.log("else");
+    for (btn of btns) {
+      btn.removeEventListener("click",displayModal);
+    }
+  }
+  console.log(btn);
+}
+window.addEventListener("resize",updateModalFunctionality)
+updateModalFunctionality();
 
 
 
